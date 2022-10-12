@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "homecoming-2022",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -17,7 +17,9 @@
     "sass": "^1.26.5"
   },
   "dependencies": {
+    "d3": "^7.6.1",
     "intersection-observer": "^0.10.0",
+    "scrollama": "^3.2.0",
     "text-balancer": "^1.0.5"
   },
   "browserslist": [
@@ -33,6 +35,6 @@
     "USE_EYE_NAV": false,
     "USE_COVER_HED": false,
     "IS_EMBED": false,
-    "DOC_URL": null
+    "DOC_URL": "https://docs.google.com/document/d/1Sw5vPnjPJIPe7-QFPIYCb3bRyT0_-55SL1ukEO4nxdg/edit"
   }
 }

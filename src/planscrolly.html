@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Scrollama: Sticky Side Example</title>
+    <meta name="description" content="Scrollama: Sticky Side Example" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.scss" />
+    <style>
+    .tick{
+      font-size:16px;
+    }
+    .pd{
+      font-size:14px;
+    }
+    
+    
+    
+    @media only screen and (max-width:999px) {
+      #scrolly {
+        position: relative;
+        padding: 1rem;
+      }
+
+      .ylabel{
+      font-size:12px;
+      transform:translateX(-10px);
+    }
+      .xlabel{
+        font-size:12px;
+        transform:translateY(-10px);
+      }
+
+      article {
+        position: relative;
+        padding: 0;
+        max-width: 20rem;
+        margin: 0 auto;
+      }
+      
+      .tick{
+      font-size:10px;
+    }
+
+      .sticky-thing {
+        margin-top:5vh;
+        position: -webkit-sticky;
+        position: sticky;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        z-index: 0;
+        top: 12.5vh;
+        height: 75vh;
+        /* Center everything inside */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .sticky-thing p {
+        font-size: 8rem;
+        font-weight: 900;
+        color: #fff;
+      }
+
+      .step:first-child{
+        margin-top:0vh;
+      }
+      .step {
+        margin: 0;
+        margin-top:35vh;
+        margin-bottom:35vh;
+        margin-left:0;
+        margin-right:0;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+
+      .step:last-child {
+        margin-bottom: 0;
+      }
+
+      .step.is-active p {
+        background-color: #fffcad;
+        color: #3b3b3b;
+      }
+
+      .step p {
+        text-align: center;
+        padding: 1rem;
+        font-size: 14px;
+        background-color:#fff;
+        opacity:0.8;
+      }
+
+      #last{
+        opacity:0;
+      }
+      main{
+        margin-bottom:7.5vh;
+      }
+    }
+
+    @media only screen and (min-width:1000px) {
+      main{
+        opacity:1;
+        overflow:visible;
+      }
+      #scrolly {
+        margin-top:15vh;
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 1rem;
+        margin-bottom:10vh;
+      }
+
+      #scrolly > * {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+      }
+
+      article {
+        position: relative;
+        padding: 0 1rem;
+        max-width: 20vw;
+        margin-right:5vw;
+      }
+
+      .sticky-thing img{
+        width:65vw;
+        height:40vw;
+      }
+      .sticky-thing {
+        position: -webkit-sticky;
+        position: sticky;
+        width: 20vw;
+        margin: 0;
+        z-index: 0;
+        margin-left:5vw;
+        top: 12.5vh;
+        height: 75vh;
+        bottom:12.5vh;
+        /* Center everything inside */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .inner{
+        position:absolute;
+      }
+      .sticky-thing p {
+        padding: 1rem;
+        font-size: 8rem;
+        font-weight: 900;
+        color: #fff;
+      }
+      
+      
+      .step {
+        margin-top:20vh;
+        margin-bottom:20vh;
+        background-color: #fff;
+        background: hsla(0,0%,100%,.9);
+        box-shadow:0 2px 5px 0 #e4e4e4;
+        color: #fff;
+      }
+
+      .step:last-child {
+        margin-bottom: 0;
+      }
+      
+      .step.is-active {
+        background-color: #fffcad;
+        color: #fff;
+        stroke:1px black;
+        margin-top:20vh;
+        margin-bottom:20vh;
+      }
+
+      .step:last-child{
+        margin-bottom:40vh;
+      }
+
+      .step p {
+        text-align: center;
+        padding: 1rem;
+        font-size: 20px;
+      }
+      #last{
+        opacity:0;
+      }
+      
+    }
+    @media only screen and (max-width:500px) {
+      .ylabel{
+      font-size:12px;
+      transform:translateX(-8px);
+      }
+   }
+    </style>
+  </head>
+
+  <body>
+    <main>
+
+      <section id="scrolly">
+        <div class="sticky-thing">
+        </div>
+
+        <article>
+          <div class="step" data-step="0" id="last">
+            <p></p>
+          </div>
+          <div class="step" data-step="1">
+            <p>In 1941, Columbia played its first-ever Homecoming game against Cornell, winning 7-0 at Baker Field.</p>
+          </div>
+          <div class="step" data-step="2">
+            <p>The Lions have played a Homecoming game every year since (except in 2020, when the season was cancelled due to COVID-19).  </p>
+          </div>
+          <div class="step" data-step="3">
+            <p>Since Al Bagnoli took charge in 2015, Columbia has won 4 and lost 2 Homecoming matches.</p>
+          </div>
+          <div class="step" data-step="4">
+            <p>Bagnoli brought Columbia football its biggest Homecoming win ever, beating Penn by 38 points in 2019.</p>
+          </div>
+          <div class="step" data-step="5">
+            <p>However, he also brought the program its tied-2nd worst Homecoming loss, losing to Penn by 35 points in 2015, his first year in charge.</p>
+          </div>
+          <div class="step" data-step="6">
+            <p>Since the turn of the century, Columbia has only won 5 Homecoming games.</p>
+          </div>
+          <div class="step" data-step="7">
+            <p>Before Bagnoli won his first Homecoming game in 2016, the last time Columbia won a Homecoming game was in 2000.</p>
+          </div>
+          <div class="step" data-step="8" id="last">
+            <p></p>
+          </div>
+        </article>
+
+
+        
+
+        
+      </section>
+
+    </main>
+
+    <!-- <div class='debug'></div> -->
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+    <script src="./scripts/scrollyscript.js"></script>
+  </body>
+</html>
