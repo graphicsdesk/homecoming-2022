@@ -10,35 +10,90 @@
         "body": [
           {
             "type": "text",
-            "value": "Leadin. Something to draw the reader in. Graphics is the only visuals and words desk at the Spectator."
+            "value": "While players, coaches, and fans have come and gone, one tradition has remained constant during the Columbia football season: Homecoming."
           },
           {
             "type": "text",
-            "value": "Nutgraf. What is the meat of the story? Why does this matter?"
+            "value": "An institution that has remained intact for over 80 years, Columbia football’s annual Homecoming game is considered the most popular sporting event hosted at Baker Athletics Complex, bringing thousands of fans together into Wien Stadium. While students may typically elect not to make the 30-minute commute to the athletic complex for a regular season game, many more students choose to make the trip uptown for Homecoming."
+          },
+          {
+            "type": "text",
+            "value": "This year, Dartmouth College, one of the co-champions for the 2021 Ivy League season, will be ready to seek redemption for last season’s game, when the Lions stunned the Big Green 19-0 in Hanover for its only Ivy loss of the season."
+          },
+          {
+            "type": "text",
+            "value": "Despite the game’s popularity, Columbia football has not had much historical success in the annual contest. The Lions have been shut out six times, and apart from one five-year winning streak from 1994-98, the Light Blue has never won more than two Homecoming games in a row. However, in recent years, head coach Al Bagnoli has created a different narrative for Columbia football."
+          },
+          {
+            "type": "text",
+            "value": "During his time as the head football coach of the University of Pennsylvania, Bagnoli led the Quakers to an overall homecoming record of 16-7. When he arrived at Columbia in 2015, the Lions had a 21-52-1 record at Homecoming games, one much worse than that of the Quakers. But since Bagnoli joined the Light Blue prior to the start of the 2015 season, he has turned things around. In the past six Homecoming games, the Lions hold a 4-2 record under Bagnoli."
           },
           {
             "type": "graphic",
             "value": {
-              "asset": "interactive.html"
+              "asset": "dotchart.html"
             }
           },
           {
             "type": "text",
-            "value": "<i>Charlotte Li is a Graphics deputy editor. She can be contacted at </i><a href=\"mailto:charlotte.li@columbiaspectator.com\"><i>charlotte.li@columbiaspectator.com</i></a><i>.</i>"
+            "value": "In Bagnoli’s first Columbia Homecoming game, the Lions were blown out by Penn 42-7. The loss extended the Lions’ Homecoming losing streak to 15 games, which remains the longest Homecoming drought in program history. But Bagnoli and the Lions would not let the drought worsen. He earned his first Columbia Homecoming win in 2016 with a low-scoring 9-7 win over the Big Green."
           },
           {
             "type": "text",
-            "value": "<i>Jun Yi Zhang is a Graphics reporter. She can be contacted at </i><a href=\"mailto:junyi.zhang@columbiaspectator.com\"><i>junyi.zhang@columbiaspectator.com</i></a><i>.</i>"
+            "value": "Bagnoli’s winning ways continued into the next Homecoming when the Lions persevered in what Columbia Athletics calls the greatest Homecoming win in its history. After trailing 21-7 to Penn in the fourth quarter, the Lions did not let up, scoring 21 unanswered points in the quarter to force an overtime period. Tied at 28 in overtime, the Quakers scored first with a field goal to regain their lead. But the Lions weren’t intimidated. On their next drive, quarterback Anders Hill, CC ’18, threw a 24-yard game-winning touchdown pass to Josh Wainwright, CC ’20, to secure the win."
+          },
+          {
+            "type": "text",
+            "value": "Bagnoli’s dramatic walk-off win against Penn not only earned him his second straight Homecoming victory, but it also broke Columbia’s 19-game losing streak against Penn. In that losing streak, the majority of Penn’s wins were overseen by Bagnoli himself, when he helmed the Quakers."
+          },
+          {
+            "type": "text",
+            "value": "Bagnoli’s winning trend did not continue the following year, however, as the Lions fell to Dartmouth 28-12. Still, Bagnoli and the Light Blue turned things around the next Homecoming, when the Lions wrecked the Quakers 44-6, the largest Homecoming victory in Columbia history."
+          },
+          {
+            "type": "text",
+            "value": "“It’s huge, especially to win at home, because we haven’t won at home yet this year and that was our big thing this week, was protecting our house,” former Columbia cornerback Ben McKeighan, CC ’20, said after the blowout victory in 2019. “So just to get a win ... in an Ivy League game, in a home game, in a Homecoming game—it’s really important.”"
+          },
+          {
+            "type": "text",
+            "value": "While the annual tradition had to come to a halt in 2020 due to the COVID pandemic, Columbia kept its winning streak alive, winning 23-14 against Penn in the 2021 Homecoming game. With the crowd involved throughout the whole game, the Lions were able to build off their fans’ momentum."
+          },
+          {
+            "type": "text",
+            "value": "“It’s always nice to be supported—I think I’ll speak for everybody,” Bagnoli said after last year’s game. “The crowd was vocal. It was nice they were into it.”"
+          },
+          {
+            "type": "text",
+            "value": "With the Big Green returning to New York for its first Homecoming game since 2018, the Lions will again be looking to maintain a winning narrative. Bagnoli will be gunning to move his Homecoming winning streak up to three. If the Lions are able to come out on top, the win would create the second longest winning streak in Homecoming history."
+          },
+          {
+            "type": "text",
+            "value": "The Homecoming game will take place on Oct. 22 at 1 p.m. at Wien Stadium. Fans who are unable to attend the game in person can stream it ESPN+ or SNY."
+          },
+          {
+            "type": "text",
+            "value": "<i>Deputy Sports Editor Rebecca Wachen can be reached at </i><a href=\"mailto:rebecca.wachen@columbiaspectator.com\"><i>rebecca.wachen@columbiaspectator.com</i></a><i>. Follow </i><i>her on Twitter </i><a href=\"https://twitter.com/rebecca_wachen?s=21\"><i>@rebecca_wachen</i></a><i>.</i>"
+          },
+          {
+            "type": "text",
+            "value": "<i>Graphics Editor Andrew Park can be reached at </i><a href=\"mailto:andrew.park@columbiaspectator.com\"><i>andrew.park@columbiaspectator.com</i></a><i>. Follow </i><i>him on Twitter </i><a href=\"http://twitter.com/androo_park\"><i>@androo_park</i></a><i>.</i>"
+          },
+          {
+            "type": "text",
+            "value": "<b><i>Want to keep up with breaking news? Subscribe to our </i></b><a href=\"https://columbiaspectator.us4.list-manage.com/subscribe?u=a3d2eeb1ae5560ca04f82f042&id=e51c51d62d\"><b><i>email newsletter </i></b></a><b><i>and like Spectator on </i></b><a href=\"https://www.facebook.com/columbiaspectator\"><b><i>Facebook</i></b></a><b><i>. </i></b>"
           }
         ],
-        "headline": "The U.S. and Ivy League schools were late to respond to COVID-19.",
-        "date": "October 17, 2019",
-        "byline": "By <a href=\"https://www.columbiaspectator.com/contributors/Charlotte-Li\">Charlotte Li</a>\nEdited by <a href=\"https://www.columbiaspectator.com/contributors/Jun-Yi-Zhang\">Jun Yi Zhang</a>",
+        "headline": "With improved Homecoming performances in the Bagnoli era, Columbia football looks to continue success this year",
+        "date": "October 17, 2022",
+        "byline1": "By <a href=\"https://www.columbiaspectator.com/contributors/Rebecca-Wachen/\">Rebecca Wachen</a>",
+        "byline2": "Graphics by <a href=\"http://columbiaspectator.com/contributors/andrew-park\">Andrew Park</a>",
+        "cover_asset": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/54FQ2BNT6VEL7GKQ4O3MFUJ37A.jpg",
+        "cover_caption": "Photo by Gabriella Gregor-Splaver",
         "USE_NEWS_NAV": true,
         "USE_EYE_NAV": false,
-        "USE_COVER_HED": false,
+        "USE_COVER_HED": true,
         "IS_EMBED": false,
-        "DOC_URL": "https://docs.google.com/document/d/1Sw5vPnjPJIPe7-QFPIYCb3bRyT0_-55SL1ukEO4nxdg/edit"
+        "DOC_URL": "https://docs.google.com/document/d/1i9OTR-bXlCM9R0wQduLt4EIrevpWBu3YxpYM1hrd63Q/edit"
       }
     }
   }

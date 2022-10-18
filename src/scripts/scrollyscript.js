@@ -37,7 +37,10 @@ if(responseindex>2){
   }
     d3.select(".sticky-thing").selectAll("*").remove();
     if(innerWidth<800){
-      width = window.innerWidth - 80- margin.left - margin.right,
+      width = window.innerWidth - 80 - margin.left - margin.right,
+      height = window.innerHeight - 80 - margin.top - margin.bottom;
+    }
+    if(innerHeight<700){
       height = window.innerHeight - 80 - margin.top - margin.bottom;
     }
     else{
@@ -52,6 +55,10 @@ function buildGraph(rindex){
   if(innerWidth<850){
     width = window.innerWidth - 80 - margin.left - margin.right,
     height = window.innerHeight - 80 - margin.top - margin.bottom;
+  }
+  if(innerHeight<700){
+    height = window.innerHeight - 80 - margin.top - margin.bottom;
+    
   }
 
 // append the svg object to the body of the page
@@ -83,6 +90,9 @@ d3.csv("https://gist.githubusercontent.com/apark2020/8d3320df7af52627b689c2d5317
     .attr("class", "yAxis")
     .call(d3.axisLeft(y));
 
+  d3.select(".yAxis").select(".tick")
+  .style("opacity",0);
+
   //gridlines
   d3.selectAll("g.yAxis g.tick")
     .append("line")
@@ -111,14 +121,14 @@ svg.append("text")
     .attr("class", "xlabel")
     .attr("x", x(30))
     .attr("y", y(-5.5))
-    .text("Points scored");
+    .text("Points allowed");
 
     svg.append("text")
     .attr("class", "ylabel")
     .attr("text-anchor", "end")
     .attr("x", x(12))
     .attr("y", y(71))
-    .text("Points allowed");
+    .text("Points scored");
 
 //add line
 svg.append('line')    
@@ -130,12 +140,9 @@ svg.append('line')
 .attr("y1",y(0))
 .attr("y2",y(70))
 
+var originX=x(60);
+var originY=y(67);
 //add pd text
-//svg.append("text")
-//.attr("class","pd")
-//.text("Zero point differential")
-//.attr("x", x(50))
-//.attr("y", y(71))
 
 //arrow markers
 svg.append("svg:defs").selectAll("marker")
@@ -153,10 +160,10 @@ svg.append("svg:defs").selectAll("marker")
 
 //add arrows
 svg.append("line")
-    .attr("x1",x(7))
-    .attr("y1",y(10))
-    .attr("x2",x(7))
-    .attr("y2",y(2))
+    .attr("x1",x(8))
+    .attr("y1",y(7))
+    .attr("x2",x(2))
+    .attr("y2",y(7))
     .attr("id","arrow0")
     .attr("stroke","black")  
     .attr("stroke-width",2)  
@@ -169,10 +176,10 @@ svg.append("line")
     });
 
 svg.append("line")
-    .attr("x2",x(46))
-    .attr("y2",y(8))
-    .attr("x1",x(51))
-    .attr("y1",y(13))
+    .attr("x2",x(6))
+    .attr("y2",y(46.5))
+    .attr("x1",x(6))
+    .attr("y1",y(52.5))
     .attr("id","arrow1")
     .attr("stroke","black")  
     .attr("stroke-width",2)  
@@ -185,10 +192,10 @@ svg.append("line")
     });
 
 svg.append("line")
-    .attr("x2",x(7))
-    .attr("y2",y(44.5))
-    .attr("x1",x(7))
-    .attr("y1",y(49.5))
+    .attr("x1",x(50.3))
+    .attr("y1",y(7))
+    .attr("x2",x(44.3))
+    .attr("y2",y(7))
     .attr("id","arrow2")
     .attr("stroke","black")  
     .attr("stroke-width",2)  
@@ -208,8 +215,8 @@ svg.append("line")
     .data(data)
     .enter()
     .append("circle")
-      .attr("cx", function (d) { return x(d.pointsfor); } )
-      .attr("cy", function (d) { return y(d.pointsagainst); } )
+      .attr("cx", function (d) { return x(d.pointsagainst); } )
+      .attr("cy", function (d) { return y(d.pointsfor); } )
       .attr("r", function (d){
         if(rindex>=3){{
           if(rindex>=6){
@@ -253,7 +260,19 @@ svg.append("line")
         }})
       .attr("id",function (d) {return "game"+d.Index})
     })
-}
+    if(window.innerHeight<700){
+    d3.select(".sticky-thing")
+    .selectAll("circle")
+    .attr("r",function(){
+      console.log(window.innerHeight/700);
+      return (window.innerHeight/700)*6;
+    })
+
+    }
+
+  }
+
+
 
 
 
@@ -368,7 +387,7 @@ function handleStepEnter(response){
     resizeDelay1=400;
     resizeDelay2=400;
     changeColorDelay1=400;
-    changeColorDelay1=400;
+    changeColorDelay2=400;
     changeColorTimer=0;
   }
   if(responseindex<2){
@@ -376,7 +395,7 @@ function handleStepEnter(response){
     resizeDelay1=500;
     resizeDelay2=700;
     changeColorDelay1=500;
-    changeColorDelay1=1000;
+    changeColorDelay2=1000;
     changeColorTimer=1;
   }
   console.log(resizeCheck);
